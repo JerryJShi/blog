@@ -92,8 +92,8 @@ Desktop          Downloads  install.log  Music               Public    Videos
 ```
 查看内部命令  
 ```bash
-    [root@CentOS6-1 ~]#help
-    [root@CentOS6-1 ~]#enable
+[root@CentOS6-1 ~]#help
+[root@CentOS6-1 ~]#enable
 ```
 外部命令：在文件系统路径下有对应的可执行程序文件
 ```bash
@@ -104,10 +104,10 @@ cat: /bin/cat /usr/share/man/man1p/cat.1p.gz /usr/share/man/man1/cat.1.gz
 ```
 查看命令是内部命令还是外部命令,使用type 命令
 ```bash
-    [root@CentOS6-1 ~]#type echo
-    echo is a shell builtin
-    [root@CentOS6-1 ~]#type man
-    man is /usr/bin/man
+[root@CentOS6-1 ~]#type echo
+echo is a shell builtin
+[root@CentOS6-1 ~]#type man
+man is /usr/bin/man
 ```
 ### Hash表  
 &ensp;&ensp;&ensp;&ensp;系统初始hash表为空，当外部命令执行时，默认会从PATH路径下寻找该命令，找到后会将这条命令的路径记录到hash表中，当再次使用该命令时，shell解释器首先会查看hash表，存在就执行，如果不存在，就去PATH路径下寻找。
@@ -115,7 +115,7 @@ cat: /bin/cat /usr/share/man/man1p/cat.1p.gz /usr/share/man/man1/cat.1.gz
 ### 别名  
 为命令指定一个名字，简化操作，提高效率。
 ```bash
-    [root@CentOS6-1 ~]#alias vimnet='vim /etc/sysconfig/network-scripts/ifcfg-eth0'
+[root@CentOS6-1 ~]#alias vimnet='vim /etc/sysconfig/network-scripts/ifcfg-eth0'
 ```
 定义的别名仅对当前shell进程有效，想要永久有效，必须保存在配置文件中。
 
@@ -157,21 +157,21 @@ hwclock，clock: 显示硬件时钟
 练习  
 1、显示当前时间，格式：2016-06-18 10:20:30
 ```bash
-    [root@CentOS6-1 ~]#date +"%F %T"
-    2018-09-22 22:07:25
+[root@CentOS6-1 ~]#date +"%F %T"
+2018-09-22 22:07:25
 ```
 
 2、显示前天是星期几
 ```bash
-    [root@CentOS6-1 ~]#date -d "-2 day" +%w
-    4
+[root@CentOS6-1 ~]#date -d "-2 day" +%w
+4
 ```
 3、设置当前日期为2019-08-0706:05:10
 ```bash
-    [root@CentOS6-1 ~]#date 080706052019.10
-    Wed Aug  7 06:05:10 CST 2019
-    [root@CentOS6-1 ~]#date +"%F %T"
-    2019-08-07 06:05:24
+[root@CentOS6-1 ~]#date 080706052019.10
+Wed Aug  7 06:05:10 CST 2019
+[root@CentOS6-1 ~]#date +"%F %T"
+2019-08-07 06:05:24
 ```
 同步时间
 ntpdate xxx.xxx.xxx.xxx（其他主机IP）
