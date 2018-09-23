@@ -1,2 +1,2 @@
 # blog1
-My first blog
+我的第一篇博客作业
