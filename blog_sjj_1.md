@@ -616,4 +616,4 @@ screen -ls
 恢复某screen会话  
 screen -r [SESSION]
 
-screen 的详细用法请参照：[screen 命令详解](http://man.linuxde.net/screen)
+screen 命令的详细用法请参照：[screen 命令详解](http://man.linuxde.net/screen)
