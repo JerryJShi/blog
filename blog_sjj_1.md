@@ -95,6 +95,16 @@ Desktop          Downloads  install.log  Music               Public    Videos
 [root@CentOS6-1 ~]#help
 [root@CentOS6-1 ~]#enable
 ```
+enable 命令
+```bash
+[root@centos7-1 ~]#enable -n pwd    #禁用内部命令pwd
+[root@centos7-1 ~]#help
+*pwd [-LP]                          # * 代表内部命令已禁用
+[root@centos7-1 ~]#enable -n        #查看所有禁用的内部命令
+enable -n pwd
+[root@centos7-1 ~]#enable pwd       #启用内部命令
+[root@centos7-1 ~]#enable -n
+```
 外部命令：在文件系统路径下有对应的可执行程序文件
 ```bash
 [root@CentOS6-1 ~]#which cat
