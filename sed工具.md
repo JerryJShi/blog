@@ -243,7 +243,7 @@ seq 10 | tac
 seq 10 | sed '1!G;h;$!d'
 seq 10 | sed -n '1!G;h;$p'
 ```
-练习
+## 练习
 1、删除centos7系统/etc/grub2.cfg文件中所有以空白开头的行行首的空白字符
 ```
 sed  's/^[[:space:]]\+\(.*\)/\1/' /etc/grub2.cfg
